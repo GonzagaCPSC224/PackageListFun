@@ -6,6 +6,7 @@ import com.sprint.gina.MyOtherClass;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -47,6 +48,17 @@ public class Main {
         Collections.sort(myHalloweenWords);
         System.out.println(myHalloweenWords);
         // shuffle(), reverse(), ...
+
+//        Fill a List with the first 10 squares (e.g. 1, 4, 9, …, 100)
+//        Print, reverse, and print the List
+        List<Integer> mySquares = new LinkedList<>();
+        for (int i = 1; i <= 10; i++) {
+            mySquares.add(i * i);
+        }
+        System.out.println(mySquares);
+        Collections.reverse(mySquares);
+        System.out.println(mySquares);
+
 
     }
 }
